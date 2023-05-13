@@ -7,7 +7,7 @@ const LoginPage = ({history}) => {
     const [loading, setLoading] = useState(false);
     const auth = getAuth(app);
     const [ form, setForm ] = useState({
-        email: 'lsy@inha.com',
+        email: 'test@inha.com',
         password: '12341234'
     });
     const { email, password } = form;

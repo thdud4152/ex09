@@ -10,7 +10,7 @@ const JoinPage = ({history}) => {
     const auth = getAuth(app);
     const db = getFirestore(app);
     const [form, setForm] = useState({
-        email:'test2@inha.com',
+        email:'lsy@inha.com',
         password: '12341234'
     });
 
@@ -34,8 +34,8 @@ const JoinPage = ({history}) => {
                     const uid = success.user.uid;
                     await setDoc(doc(db, 'user' ,uid), {
                         email: email,
-                        name: '홍길동',
-                        address: '인천 부평구 삼산동',
+                        name: '이소영',
+                        address: '인천 서구 마전동',
                         phone: '010-6768-1111',
                         photo: ''
                     });
